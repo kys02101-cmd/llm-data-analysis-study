@@ -7,11 +7,11 @@
 
 ## 0. 제출 정보
 
-- 이름:
-- GitHub ID:
+- 이름: 권영서
+- GitHub ID: kys02101-cmd
 - 개인 저장소명: `llm-data-analysis-study`
-- 작성일:
-- 사용한 LLM:
+- 작성일: 26-09-13
+- 사용한 LLM: claude
 
 ### 최종 제출 URL
 
