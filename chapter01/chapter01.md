@@ -16,7 +16,7 @@
 ### 최종 제출 URL
 
 ```text
-여기에 개인 GitHub 저장소의 chapter01/chapter01.md 파일 URL을 입력하세요.
+https://github.com/kys02101-cmd/llm-data-analysis-study/blob/main/chapter01/chapter01.md
 ```
 
 ---
@@ -349,7 +349,7 @@ Chapter 02 또는 Chapter 03에서 추가로 확인해야 할 내용을 작성�
 ### 최종 파일 URL
 
 ```text
-https://github.com/<내-GitHub-ID>/llm-data-analysis-study/blob/main/chapter01/chapter01.md
+https://github.com/kys02101-cmd/llm-data-analysis-study/blob/main/chapter01/chapter01.md
 ```
 
 ---
