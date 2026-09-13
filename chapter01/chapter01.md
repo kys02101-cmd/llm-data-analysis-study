@@ -257,7 +257,7 @@ notebooks/ch01_ai_data_analysis_intro.ipynb
 
 ### 내 환경 상태
 
-- [ ] 아직 환경설정 전이라 Notebook 위치만 확인했습니다.
+- [v] 아직 환경설정 전이라 Notebook 위치만 확인했습니다.
 - [ ] 환경설정이 완료되어 Notebook을 직접 실행했습니다.
 
 ### 환경설정 완료 학생만 작성
@@ -365,7 +365,7 @@ https://github.com/kys02101-cmd/llm-data-analysis-study/blob/main/chapter01/chap
 ### 수행 상태
 
 - [ ] COMPLETE
-- [ ] PARTIAL
+- [v] PARTIAL
 
 ### 내가 가장 중요하게 내린 판단 1개
 
