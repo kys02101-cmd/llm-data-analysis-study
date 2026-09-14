@@ -83,6 +83,7 @@ https://github.com/kys02101-cmd/llm-data-analysis-study/blob/main/chapter01/chap
 ### 필요한 컬럼 후보
 
 | 파일 | 필요한 컬럼 | 필요한 이유 |
+| --- | --- | --- |
 | orders | order_id, customer_id, order_date, order_status | order_status: "completed" 필터링, order_date: "최근 3개월" 필터링 |
 | order_items | order_id, product_id, quantity, unit_price | order_item 단위로 집계, 매출액 = quantity × unit_price로 계산 |
 | products | product_id, category | category별로 묶기 위한 키 |
