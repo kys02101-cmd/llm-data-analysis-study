@@ -77,38 +77,44 @@ https://github.com/kys02101-cmd/llm-data-analysis-study/blob/main/chapter01/chap
 
 - [ ] `customers.csv`
 - [ ] `products.csv`
-- [ ] `orders.csv`
+- [x] `orders.csv`
 - [ ] `order_items.csv`
 
 ### 필요한 컬럼 후보
 
 | 파일 | 필요한 컬럼 | 필요한 이유 |
-| --- | --- | --- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| orders | order_id, customer_id, order_date, order_status | order_status: "completed" 필터링, order_date: "최근 3개월" 필터링 |
+| order_items | order_id, product_id, quantity, unit_price | order_item 단위로 집계, 매출액 = quantity × unit_price로 계산 |
+| products | product_id, category | category별로 묶기 위한 키 |
+| customers | customer_id, gender | 성별 기준 분석의 핵심 |
 
 ### 데이터 연결 관계
 
 ```text
-필요한 PK/FK 관계 또는 파일 연결 관계를 작성하세요.
+customers (gender) 
+   ↓ customer_id
+orders (order_status, order_date)
+   ↓ order_id
+order_items (quantity, unit_price)
+   ↓ product_id
+products (category)
 ```
 
 ### 결과 관찰
 
-질문에 답하기 위해 어떤 데이터가 필요하다는 사실을 확인했는지 작성하세요.
+customers → orders → order_items → products, 총 4개 테이블을 모두 연결해야 "성별 × category" 교차표를 만들 수 있다는 것을 확인했습니다. 4개 테이블을 연결해야 했기 때문에 데이터 연결 고리를 구성하는 작업이 조금 까다로웠지만 여러 데이터를 가로질러 종합적인 분석을 할 수 있겠다고 생각했습니다. 
 
 ### 나의 해석과 판단
 
-현재 데이터만으로 질문에 답할 수 있는지 판단하세요.
+데이터에 결측치가 없다는 가정 하에 대부분 질문에 답을 내릴 수 있을 것으로 판단했습니다.
 
 ### 업무·분석적 의미
 
-질문과 데이터 구조를 먼저 연결하는 것이 왜 중요한지 작성하세요.
+질문과 데이터 구조를 먼저 연결하는 작업이 중요하다 생각되었던 부분은, 실제 데이터를 열어보기 전까지는 질문으로 구성했던 계산이 실제로 가능한지, 정의한 개념이 데이터에 어떻게 매핑되는지 등을 알 수 없었기 때문입니다. 따라서 질문을 잘 작성했다고 하더라도 실제 데이터를 가지고 구조를 짜는 작업을 거치면서 질문을 조정하거나 하는 작업을 진행할 수 있기 때문에 중요한 것 같습니다.
 
 ### 한계와 추가 확인 사항
 
-실제 컬럼 존재 여부, 타입, 결측 등 아직 확인하지 못한 부분을 작성하세요.
+결측치가 존재하는지 확인할 필요가 있습니다. 또한 제가 제시한 필터링 조건으로 충분한 표본 수가 확보되는지도 확인해야 합니다.
 
 ### Evidence
 
@@ -257,7 +263,7 @@ notebooks/ch01_ai_data_analysis_intro.ipynb
 
 ### 내 환경 상태
 
-- [v] 아직 환경설정 전이라 Notebook 위치만 확인했습니다.
+- [x] 아직 환경설정 전이라 Notebook 위치만 확인했습니다.
 - [ ] 환경설정이 완료되어 Notebook을 직접 실행했습니다.
 
 ### 환경설정 완료 학생만 작성
@@ -365,7 +371,7 @@ https://github.com/kys02101-cmd/llm-data-analysis-study/blob/main/chapter01/chap
 ### 수행 상태
 
 - [ ] COMPLETE
-- [v] PARTIAL
+- [x] PARTIAL
 
 ### 내가 가장 중요하게 내린 판단 1개
 
