@@ -30,7 +30,10 @@ git --version
 ### 실행 결과
 
 ```text
-여기에 실제 결과를 작성하세요.
+PS C:\WINDOWS\system32> python --version
+Python 3.14.7
+PS C:\WINDOWS\system32> git --version
+git version 2.55.0.windows.5
 ```
 
 ### Evidence
