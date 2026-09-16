@@ -71,10 +71,10 @@ git version 2.55.0.windows.5
 ### 핵심 실행 결과
 
 ```text
-현재 프로젝트 경로:
-터미널 Python 실행 파일:
-가상환경 활성화 여부:
-패키지 설치 결과:
+현재 프로젝트 경로: C:\Users\Administrator\Documents\개발\llm-data-analysis-course
+터미널 Python 실행 파일: C:\Users\Administrator\Documents\개발\llm-data-analysis-course\.venv\Scripts\python.exe
+가상환경 활성화 여부: 활성화됨
+패키지 설치 결과: 설치됨
 ```
 
 ### Evidence
@@ -83,19 +83,19 @@ git version 2.55.0.windows.5
 
 ### 결과 관찰
 
-현재 `python`이 어떤 실행 파일을 가리키는지 작성하세요.
+C:\Users\Administrator\Documents\개발\llm-data-analysis-course\.venv\Scripts\python.exe
 
 ### 나의 해석과 판단
 
-시스템 Python과 프로젝트 `.venv`를 분리하는 것이 왜 필요한지 자신의 말로 작성하세요.
+시스템 Python과 프로젝트별 .venv를 분리하면 프로젝트마다 필요한 패키지와 버전을 독립적으로 관리할 수 있으므로, 한 프로젝트에서 뭔가를 변경해도 다른 프로젝트에 영향을 주지 않게끔 할 수 있어 유용합니다.
 
 ### 업무·분석적 의미
 
-다른 사람이 같은 프로젝트를 재실행할 때 가상환경이 주는 이점을 작성하세요.
+가상환경을 사용하면 프로젝트에 필요한 Python 패키지와 버전을 동일하게 관리할 수 있어, 다른 사람이 같은 프로젝트를 실행할 때도 동일한 환경을 쉽게 재현할 수 있습니다.
 
 ### 한계와 추가 확인 사항
 
-회사/기관 PC 정책, Python 버전 차이 등 현재 환경의 제약을 작성하세요.
+회사 PC에서 PowerShell에서 가상환경 활성화 스크립트 실행이 제한되는 문제가 있었습니다.
 
 ---
 
