@@ -13,7 +13,7 @@
 ### 최종 제출 URL
 
 ```text
-https://github.com/<GitHub-ID>/llm-data-analysis-study/blob/main/chapter02/chapter02.md
+https://github.com/kys02101-cmd/llm-data-analysis-study/blob/main/chapter02/chapter02.md
 ```
 
 ---
